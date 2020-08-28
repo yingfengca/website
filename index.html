@@ -1,1 +1,63 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <style>
+        body{
+            /* background-image: url(https://images.pexels.com/photos/977737/pexels-photo-977737.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */
+            background-image: url(https://picsum.photos/1800/1000);
+            background-size: cover;
+            
+        }
+        div{
+            width:700px;
+            height:200px;
+            backdrop-filter: blur(10px);
+            border:1px solid rgba(255, 255, 255, 0.5);
+            margin:100px auto;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius:20px;
+            line-height: 200px;
+        }
+        form{
+           text-align: center; 
+        }
+
+        #keyword{
+            width: 400px;
+            height:35px;
+            border-radius: 35px;
+            border:1px solid white;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding-left:17px;
+            outline: none;
+        }
+
+        #btn{
+            width:80px;
+            height:35px;
+            border:1px solid crimson;
+            border-radius:35px;
+            background-color:crimson;
+            color:white;
+            outline:none;
+            margin:0 20px;
+        }
+
+        #btn:hover{
+            cursor: pointer;
+            background-color:rgb(255, 25, 71);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="https://www.google.ca/search">
+            <input type="text" name="q" id="keyword" placeholder="Enter and search ...">
+            <input type="submit" value="Search" id="btn">
+        </form>
+    </div>
+</body>
+</html>
