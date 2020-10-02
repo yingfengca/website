@@ -44,10 +44,11 @@
         }
 
         #picture{
+            visibility: hidden;
             background-image: url(pumpkin.jpg);
             width: 600px;
             height: 500px;
-            animation: zoomIn 1s;
+            /* animation: zoomIn 1s; */
         }
 
         @keyframes zoomIn {
@@ -61,7 +62,23 @@
     </style>
 </head>
 <body>
-    <button>DO NOT CLICK!!!</button>
+    <button onclick="showPicture()">DO NOT CLICK!!!</button>
     <div id="picture"></div>
+
+    <audio id="theme" src="harry_potter_theme.mp3"></audio>
+    <audio id="laugh" src="laugh.mp3"></audio>
+
+    <script>
+        function showPicture(){
+            picture.style.visibility='visible';
+            picture.style.animation='zoomIn 1s forwards'
+            laugh.play()
+        }
+
+        window.onload=function(){         
+            theme.play()
+        }
+
+    </script>
 </body>
 </html>
