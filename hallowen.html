@@ -64,14 +64,17 @@
                 transform: scale(5);
             }
         }
+
+        #theme{
+            width: 100px;
+            height: 100px;
+        }
     </style>
 </head>
 
 <body>
     <button onclick="showPicture()">DO NOT CLICK!!!</button>
     <div id="picture"></div>
-
-    <audio id="theme" src="harry_potter_theme.mp3"></audio>
     <audio id="laugh" src="laugh.mp3"></audio>
 
     <script>
@@ -80,14 +83,6 @@
             picture.style.animation = 'zoomIn 1s forwards'
             laugh.play()
         }
-
-        window.onload = function () {
-            let theme = new Audio("harry_potter_theme.mp3")
-            theme.play().then(function () {
-
-            })
-        }
-
     </script>
 </body>
 
