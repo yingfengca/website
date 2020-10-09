@@ -1,4 +1,4 @@
 # website
 # head
 This is my website.
-[Hallowen](hallowen.html)
+[Hallowen](https://yingfengca.github.io/website/hallowen.html)
